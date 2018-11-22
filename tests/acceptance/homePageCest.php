@@ -318,7 +318,6 @@ class homePageCest
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[1]);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[2]);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[3]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[4]);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[6]);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[8]);
     }
