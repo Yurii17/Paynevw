@@ -10,3 +10,10 @@ extensions:
         - Codeception\Extension\RunFailed
 settings:
     strict_xml: true
+    extensions:
+        enabled:
+            - Yandex\Allure\Adapter\AllureAdapter
+        config:
+            Yandex\Allure\Adapter\AllureAdapter:
+                deletePreviousResults: false
+                outputDirectory: allure-results
