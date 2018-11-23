@@ -13,7 +13,7 @@ class payne
      * public static $formSubmitButton = "#mainForm input[type=submit]";
      */
 
-    //Logo Paynevw
+    // Logo Paynevw
     public static $Logo = '#header > div > div > div.col-12.col-sm-6.col-xl-3.order-1.d-flex.align-items-center.mb-3.mb-xl-0 > a';
 
     //Header Footer
@@ -27,7 +27,7 @@ class payne
         'li:nth-child(5)'];
     public static $Footer = 'body > footer > div > div';
 
-    //Slider Mini
+    // Slider Mini
     public static $Slider = 'div.bg-romb.pt-5.pb-4';
     public static $SliderAll = [
         'body > div.bg-romb.pt-5.pb-4 > div > div > div:nth-child(1)',
@@ -36,7 +36,7 @@ class payne
         'body > div.bg-romb.pt-5.pb-4 > div > div > div:nth-child(4)',
         'body > div.bg-romb.pt-5.pb-4 > div > div > div:nth-child(5)'];
 
-    //Slider Cars Big
+    // Slider Cars Big
     public static $element = 'body > section:nth-child(7) > div > div.swiper-products-container.swiper-container-horizontal';
     public static $sliderElement = 'body > section:nth-child(7) > div > div.swiper-products-container.swiper-container-horizontal';
     public static $sliderGrabElement = 'section div.swiper-slide.swiper-slide-next > div.img-box > h4';
@@ -44,7 +44,7 @@ class payne
 
 
 
-    //Filter
+    // Filter
     public static $ClearAll = '#clear-filters';
     public static $Transmission = '#filters_form > div.filter-item.filter-item-transmission';
     public static $TransmissionAutomatic = '#filters_form > div.filter-item.filter-item-transmission.open > div > label:nth-child(1)';
@@ -102,8 +102,8 @@ class payne
     public static $loader = 'div.page-loader';
     public static $searchResult = 'div.search-result.dropdown-menu.w-100.my-0.border-top-0.show';
     public static $carousell = 'body > section.full-width.d- > div > div.swiper-wrapper';
-    public static $email = 'div.col-12.col-lg-6.py-3.py-lg-5.pl-lg-5 > div > input';
-    public static $button = 'div.col-12.col-lg-6.py-3.py-lg-5.pl-lg-5 > div > div > button';
+    public static $footerEmail = '#footer_email';
+    public static $footerBtn = 'div.col-12.col-xl-6.py-3.py-xl-5.pl-xl-5 > div > div > button';
     public static $successful = '#custom-message-dialog > div > div > div.modal-header';
     public static $searchbutton = '#header > div > div > div.col-12.col-xl-6.d-flex.order-3.order-xl-2.justify-content-center.align-items-center > div > form > div > div > div.input-group-append > button';
     public static $searchContent = '#content';
@@ -116,30 +116,30 @@ class payne
     public static $ServiceHours = 'body > section:nth-child(11) > div.container > div > div > div.row > div:nth-child(2)';
 
 
-    //New Cars
+    // New Cars
     public static $NewCars = '#menu_item-60';
-    public static $NewCarsdropdownlist = '#main-menu > li:nth-child(2) > div > section > a:nth-child(2)';
-    public static $mainmenuitem = '#main-menu > li:nth-child(2) > div > section > div > div.swiper-wrapper > div > div:nth-child(1) > div:nth-child(1)';
-    public static $VolkswagenAtlasLink = '#main-menu > li:nth-child(2) > div > section > div > div.swiper-wrapper > div > div:nth-child(1) > div:nth-child(1) > div.txt.text-left > h4 > a';
+    public static $NewCarsdropdownlist = 'div.drp.d-none.d-xl-block';
+    public static $mainmenuitem = 'div.container.d-none.d-xl-block > div > div > ul';
+    public static $VolkswagenAtlasLink = 'div.swiper-slide-img > a';
     public static $VolkswagenGolfLink = '#main-menu > li:nth-child(2) > div > section > div > div.swiper-wrapper > div > div:nth-child(2) > div:nth-child(1) > div.txt.text-left > h4 > a';
     public static $VolkswagenGolfRLink = '#main-menu > li:nth-child(2) > div > section > div > div.swiper-wrapper > div > div:nth-child(3) > div:nth-child(1) > div.txt.text-left > h4 > a';
     public static $letUsKnow = '#letUsKnow';
     public static $Submitform = '#letUsKnowModal > div > div > div.modal-body > div > form';
 
 
-    //Used Cars
+    // Used Cars
     public static $UsedCars = '#menu_item-66';
     public static $UsedCarsdropdownlist ='#main-menu > li:nth-child(3) > div';
 
 
-    //Used Cars => DealsUnder15000
+    // Used Cars => DealsUnder15000
     public static $DealsUnder15000 = '#main-menu > li:nth-child(3) > div > section > div > ul > li:nth-child(3) > a';
     public static $Breadcrumb = 'div.col-xs-12.col-lg-4.text-center.text-lg-left.filters-breadcrumb > ol';
     public static $BreadcrumbHome = 'div.col-xs-12.col-lg-4.text-center.text-lg-left.filters-breadcrumb > ol > li:nth-child(1) > a';
     public static $BreadcrumbDealsUnder15000 = 'div.col-xs-12.col-lg-4.text-center.text-lg-left.filters-breadcrumb > ol > li.breadcrumb-item.active';
 
 
-    //Used Cars => Over30MPG
+    // Used Cars => Over30MPG
     public static $Over30MPG = '#main-menu > li:nth-child(3) > div > section > div > ul > li:nth-child(4) > a';
 
 
@@ -147,15 +147,15 @@ class payne
     public static $Used4x4 = '#main-menu > li:nth-child(3) > div > section > div > ul > li:nth-child(5) > a';
 
 
-    //Used Cars => Used Trucks
+    // Used Cars => Used Trucks
     public static $UsedTrucks = '#main-menu > li:nth-child(3) > div > section > div > ul > li:nth-child(6) > a';
 
 
-    //Used Cars => Used Luxury Vehicles
+    // Used Cars => Used Luxury Vehicles
     public static $UsedLuxuryVehicles = '#main-menu > li:nth-child(3) > div > section > div > ul > li:nth-child(7) > a';
 
 
-    //Finance
+    // Finance
     public static $Finance = '#main-menu > li:nth-child(4) > span > a';
     public static $checkoption = '#purchase > div.p-5 > div:nth-child(4) > div';
     public static $buttonFormActive = '#contact > div.px-5.py-2.bg-white.form-footer > div > div > button';
@@ -164,24 +164,23 @@ class payne
     public static $buttonBack = '#purchase > div.px-5.py-2.bg-white.form-footer > div > div > button.btn.btn-outline-secondary.border-0.d-flex.align-items-center.justify-content-between.finance-step-switcher.finance-step-switcher-back';
     public static $error = '#custom-message-dialog > div > div';
 
-    //Service&Parts
+    // Service&Parts
     public static $ServiceParts = '#main-menu > li:nth-child(5) > span > a';
 
-    //AboutUs => Our Team
+    // AboutUs => Our Team
     public static $AboutUs = '#menu_item-49';
     public static $AboutUsdropdownlist = '#main-menu > li:nth-child(3) > div';
     public static $OurTeam = '#main-menu > li:nth-child(6) > div > section > div > ul > li:nth-child(1) > a';
     public static $TextMeetOurTeam = 'div.col-lg-9.col.description-wrap';
     public static $Questions = 'div.card-header';
-    public static $Sales = ' div.font-weight-semibold.pb-2';
+    public static $Sales = 'div.font-weight-bold.pb-2';
     public static $Service = 'div.card-body';
-    public static $OurTeamManagers = 'body > section.content-wrap.border-bottom > div > div.row.pt-60';
     public static $EmailSales = 'body > section.content-wrap.border-bottom > div > div.row.pb-60 > aside > div > div.card-header > div.links-divided > a:nth-child(1)';
     public static $EmailSalesButton = '#emailSalesModal > div > div > div.modal-body > div > form > div.form-group.text-right > button';
-    public static $EmailSalesSuccess = '#custom-message-dialog';
-    public static $Hours = 'body > section.content-wrap.border-bottom > div > div.row.pb-60 > aside > div > div.card-header > div.links-divided > a:nth-child(3)';
+    public static $EmailSalesSuccess = '#custom-message-dialog > div > div > div.modal-body';
+    public static $Hours = 'div.links-divided > a:nth-child(3)';
 
-    //Calculator
+    // Calculator
     public static $CalculatorBlock = '#payment-calculator';
     public static $CalculatorField = [
         'div:nth-child(2)',
@@ -198,12 +197,12 @@ class payne
     public static $modalinfo = '#calculator-modal > div > div > div.modal-body';
     public static $closemodal = '#calculator-modal > div > div > div.modal-header > button';
 
-    //Tabs
+    // Tabs
     public static $tabswrap = 'div.tabs-wrap.tabs-bordered.my-5';
     public static $tabsbutton = ['#myTab > li:nth-child(2)', '#myTab > li:nth-child(3)'];
     public static $tabswrapdiv = ['#first-tab', '#second-tab', '#third-tab'];
 
-    //Share with your friends:
+    // Share with your friends:
     public static $share = 'div.subscribe-form';
     public static $sharebuttons = [
         '#st-1 > div.st-btn.st-first',
@@ -211,7 +210,7 @@ class payne
         '#st-1 > div.st-btn.st-last'
     ];
 
-    //ButtonFilterGroup
+    // ButtonFilterGroup
     public static $BtnFilterGroup = 'div.btn-group.filtered-view.mr-3.d-none.d-md-inline-flex';
     public static $BtnFilterFirst = 'div.btn-group.filtered-view.mr-3.d-none.d-md-inline-flex > button.btn.btn-outline-white.filtered-view-grid';
     public static $BtnFilterFirstActive = 'button.btn.btn-outline-white.filtered-view-grid.active';
@@ -220,8 +219,24 @@ class payne
     public static $BtnFilterFirstActiveResult = '#content > div > div.d-flex.align-content-start.flex-wrap.w-100.filtered-content.grid-display';
     public static $BtnFilterSecondActiveResult = '#content > div > div.d-flex.align-content-start.flex-wrap.w-100.filtered-content.list-display';
 
-    //Chat with Us
+    // Chat with Us
     public static $ChatClose = '#caoBusinessCardMinimizeArea';
+
+
+    // Values
+    public static $valuesFiled = '#tradepending-vehicle-typeahead';
+    public static $valuesFieldDrop = '#tradepending-input > span > span > div';
+    public static $valuesFieldId = '#fname-group';
+    public static $valuesModalFirstName = '#first_name';
+    public static $valuesModalLastName = '#last_name';
+    public static $valuesModalEmail = '#email';
+    public static $valuesModalPhone = '#phone';
+    public static $valuesModalBtn = 'div:nth-child(3) > div > input';
+    public static $valuesModalCoupe = 'div.select-container > div:nth-child(1) > a';
+    public static $valuesModalGrab = 'div.container-fluid.main > h2';
+
+
+
 
 
     /**

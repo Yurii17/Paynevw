@@ -68,21 +68,23 @@ class homePageCest
         }, 10);
     }
     */
-
+    /**
+     * @param AcceptanceTester $I
+     * @throws Exception
+     */
     public function SendEmailAndTestPage(AcceptanceTester $I)
     {
         $I->moveMouseOver(page::$NewCars);
-        $I->seeElement(page::$mainmenuitem);
+        $I->waitForElementVisible(page::$mainmenuitem, 100);
         $I->seeElement(page:: $NewCarsdropdownlist);
         $I->moveMouseOver(page::$UsedCars);
-        $I->seeElement(page::$UsedCarsdropdownlist);
-        $I->fillField(page::$email, $this->value1);
-        $I->seeInField(page::$email, $this->value1);
-        $I->click(page::$button);
+        $I->waitForElementVisible(page::$UsedCarsdropdownlist, 100);
+        $I->fillField(page::$footerEmail, $this->value1);
+        $I->seeInField(page::$footerEmail, $this->value1);
+        $I->click(page::$footerBtn);
         $I->wait(2);
         $I->seeElement(page::$successful);
-        $I->wait(3);
-        $I->seeElement(page::$SalesHours);
+        $I->waitForElementVisible(page::$SalesHours, 100);
         $I->seeElement(page::$ServiceHours);
     }
 
@@ -331,7 +333,6 @@ class homePageCest
         $I->seeElement(page::$Sales);
         $I->seeElement(page::$Service);
         $I->seeElement(page::$Hours);
-        $I->seeElement(page::$OurTeamManagers);
         $I->click(page::$EmailSales);
         $I->fillField('input[name="first_name"][type="text"]', 'Marcus');
         $I->seeInField('input[name="first_name"][type="text"]', 'Marcus');
@@ -340,13 +341,12 @@ class homePageCest
         $I->fillField('input[name="email"][type="email"]', 'vv@mail.com');
         $I->seeInField('input[name="email"][type="email"]', 'vv@mail.com');
         $I->click(page::$EmailSalesButton);
+        $I->waitForElementVisible(page::$EmailSalesSuccess);
     }
-
     /**
      * @param AcceptanceTester $I
      * @group main_1
      */
-
     public function SearchFor(AcceptanceTester $I)
     {
         $I->wantTo('select random value from array and fill into search field');
@@ -422,7 +422,6 @@ class homePageCest
         $I->moveMouseOver(page::$SliderAll[3]);
         $I->moveMouseOver(page::$SliderAll[4]);
     }
-
     /**
      * @param AcceptanceTester $I
      * @throws Exception
@@ -437,6 +436,28 @@ class homePageCest
         }, 100);
        $after = $I->grabTextFrom(page::$sliderGrabElement);
        $I->assertNotSame($before,$after);
+    }
+    /**
+     * @param AcceptanceTester $I
+     * @throws Exception
+     */
+    public function Values(AcceptanceTester $I)
+    {
+        $I->fillField(page::$valuesFiled, '2015 Mercedes-Benz S-Class S 63 AMG');
+        $I->wait(3);
+        $I->click(page::$valuesFieldDrop);
+        $I->wait(5);
+        $I->seeElement(page::$valuesFieldId);
+        $I->fillField(page::$valuesModalFirstName,'Huston');
+        $I->fillField(page::$valuesModalLastName,'Lucio');
+        $I->fillField(page::$valuesModalEmail,'lucio.hustom@mail.com');
+        $I->fillField(page::$valuesModalPhone,'1231231231');
+        $I->click(page::$valuesModalBtn);
+        $I->wait(3);
+        $I->click(page::$valuesModalCoupe);
+        $value = $I->grabTextFrom(page::$valuesModalGrab);
+
+        var_dump($value);
     }
 
 
