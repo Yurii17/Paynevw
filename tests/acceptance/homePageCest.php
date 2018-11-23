@@ -441,6 +441,8 @@ class homePageCest
      * @param AcceptanceTester $I
      * @throws Exception
      */
+
+    /*
     public function Values(AcceptanceTester $I)
     {
         $I->fillField(page::$valuesFiled, '2015 Mercedes-Benz S-Class S 63 AMG');
@@ -460,7 +462,7 @@ class homePageCest
         var_dump($value);
     }
 
-
+    */
 
 
 
