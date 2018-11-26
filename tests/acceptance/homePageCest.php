@@ -244,8 +244,6 @@ class homePageCest
         $I->click(page::$VolkswagenAtlasLink);
         $I->seeElement(page::$filterTypeOpen);
         $I->seeOptionIsSelected(page::$TypeCheckRadio[1],'New');
-        $I->canSeeOptionIsSelected(page::$TypeCheckRadio[0], 'Used');
-        $I->canSeeOptionIsSelected(page::$TypeCheckRadio[2], 'Certified Used');
         $I->seeElement(page::$MakeOpen);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[9]);
         $I->seeElement(page::$Model);
@@ -437,18 +435,17 @@ class homePageCest
        $after = $I->grabTextFrom(page::$sliderGrabElement);
        $I->assertNotSame($before,$after);
     }
+    /*
     /**
      * @param AcceptanceTester $I
      * @throws Exception
-     */
 
-    /*
     public function Values(AcceptanceTester $I)
     {
         $I->fillField(page::$valuesFiled, '2015 Mercedes-Benz S-Class S 63 AMG');
         $I->wait(3);
         $I->click(page::$valuesFieldDrop);
-        $I->wait(5);
+        $I->wait(3);
         $I->seeElement(page::$valuesFieldId);
         $I->fillField(page::$valuesModalFirstName,'Huston');
         $I->fillField(page::$valuesModalLastName,'Lucio');
@@ -461,8 +458,9 @@ class homePageCest
 
         var_dump($value);
     }
-
     */
+
+
 
 
 

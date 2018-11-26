@@ -227,7 +227,7 @@ class payne
     public static $valuesFiled = '#tradepending-vehicle-typeahead';
     public static $valuesFieldDrop = '#tradepending-input > span > span > div';
     public static $valuesFieldId = '#fname-group';
-    public static $valuesModalFirstName = '#first_name';
+    public static $valuesModalFirstName = 'input id="first_name" class="form-control input-field text ui-widget-content ui-corner-all"';
     public static $valuesModalLastName = '#last_name';
     public static $valuesModalEmail = '#email';
     public static $valuesModalPhone = '#phone';
