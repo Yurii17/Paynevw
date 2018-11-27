@@ -436,11 +436,11 @@ class homePageCest
        $after = $I->grabTextFrom(page::$sliderGrabElement);
        $I->assertNotSame($before,$after);
     }
-
+    /*
     /**
      * @param AcceptanceTester $I
      * @throws Exception
-     */
+
     public function Values(AcceptanceTester $I)
     {
         $I->fillField(page::$valuesFiled, '2015 Mercedes-Benz S-Class S 63 AMG');
@@ -460,7 +460,7 @@ class homePageCest
         var_dump($value);
     }
 
-
+    */
 
 
 
