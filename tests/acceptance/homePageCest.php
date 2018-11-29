@@ -314,13 +314,7 @@ class homePageCest
         $I->seeElement(page::$MakeOpen);
         $I->seeElement(page::$Model);
         $I->seeOptionIsSelected(page::$TypeCheckRadio[0],'Used');
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[0]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[1]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[2]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[3]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[4]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[7]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[8]);
+        $I->CheckOption($I);
     }
 
     public function AboutUsOurTeam(AcceptanceTester $I)
@@ -436,19 +430,19 @@ class homePageCest
        $after = $I->grabTextFrom(page::$sliderGrabElement);
        $I->assertNotSame($before,$after);
     }
-    /*
+
     /**
      * @param AcceptanceTester $I
      * @throws Exception
-
+     */
     public function Values(AcceptanceTester $I)
     {
         $I->fillField(page::$valuesFiled, '2015 Mercedes-Benz S-Class S 63 AMG');
         $I->wait(3);
         $I->click(page::$valuesFieldDrop);
         $I->wait(3);
-        $I->seeElement(page::$valuesFieldId);
-        $I->fillField(page::$valuesModalFirstName,'Huston');
+        /*
+        $I->fillField('#first_name','Huston');
         $I->fillField(page::$valuesModalLastName,'Lucio');
         $I->fillField(page::$valuesModalEmail,'lucio.hustom@mail.com');
         $I->fillField(page::$valuesModalPhone,'1231231231');
@@ -456,11 +450,11 @@ class homePageCest
         $I->wait(3);
         $I->click(page::$valuesModalCoupe);
         $value = $I->grabTextFrom(page::$valuesModalGrab);
-
         var_dump($value);
+        */
     }
 
-    */
+
 
 
 

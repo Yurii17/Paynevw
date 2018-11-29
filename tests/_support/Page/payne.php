@@ -82,18 +82,33 @@ class payne
     public static $MakeOpen = 'div.filter-item.filter-item-make.open';
     public static $Model = 'div.filter-item.filter-item-make.open';
     public static $MakeCheckbox = [
-        'input[type="checkbox"][name="make"][value="Acura"]',
-        'input[type="checkbox"][name="make"][value="Audi"]',
-        'input[type="checkbox"][name="make"][value="BMW"]',
-        'input[type="checkbox"][name="make"][value="Cadillac"]',
-        'input[type="checkbox"][name="make"][value="Land Rover"]',
-        'input[type="checkbox"][name="make"][value="Jaguar"]',
-        'input[type="checkbox"][name="make"][value="Lexus"]',
-        'input[type="checkbox"][name="make"][value="Lincoln"]',
-        'input[type="checkbox"][name="make"][value="Mercedes-Benz"]',
-        'input[type="checkbox"][name="make"][value="Volkswagen"]',
-        'input[type="checkbox"][name="transmission"][value="Automatic"]',
-        'input[type="checkbox"][name="transmission"][value="Manual"]',
+        'input[type="checkbox"][name="make"][value="Acura"]', //////////////////// 0
+        'input[type="checkbox"][name="make"][value="Alfa Romeo"]', /////////////// 1
+        'input[type="checkbox"][name="make"][value="Audi"]', ///////////////////// 2
+        'input[type="checkbox"][name="make"][value="BMW"]', ////////////////////// 3
+        'input[type="checkbox"][name="make"][value="Buick"]', //////////////////// 4
+        'input[type="checkbox"][name="make"][value="Cadillac"]', ///////////////// 5
+        'input[type="checkbox"][name="make"][value="Chevrolet"]', //////////////// 6
+        'input[type="checkbox"][name="make"][value="Chrysler"]', ///////////////// 7
+        'input[type="checkbox"][name="make"][value="Dodge"]', //////////////////// 8
+        'input[type="checkbox"][name="make"][value="Ford"]', ///////////////////// 9
+        'input[type="checkbox"][name="make"][value="GMC"]', ////////////////////// 10
+        'input[type="checkbox"][name="make"][value="Honda"]', //////////////////// 11
+        'input[type="checkbox"][name="make"][value="Hyundai"]', ////////////////// 12
+        'input[type="checkbox"][name="make"][value="Jeep"]', ///////////////////// 13
+        'input[type="checkbox"][name="make"][value="Kia"]', ////////////////////// 14
+        'input[type="checkbox"][name="make"][value="Lincoln"]', ////////////////// 15
+        'input[type="checkbox"][name="make"][value="Mazda"]', //////////////////// 16
+        'input[type="checkbox"][name="make"][value="Mercedes-Benz"]', //////////// 17
+        'input[type="checkbox"][name="make"][value="Mitsubishi"]', /////////////// 18
+        'input[type="checkbox"][name="make"][value="Nissan"]', /////////////////// 19
+        'input[type="checkbox"][name="make"][value="Ram"]', ////////////////////// 20
+        'input[type="checkbox"][name="make"][value="Scion"]', //////////////////// 21
+        'input[type="checkbox"][name="make"][value="Suzuki"]', /////////////////// 22
+        'input[type="checkbox"][name="make"][value="Toyota"]', /////////////////// 23
+        'input[type="checkbox"][name="make"][value="Volkswagen"]', /////////////// 24
+        'input[type="checkbox"][name="transmission"][value="Automatic"]', //////// 12
+        'input[type="checkbox"][name="transmission"][value="Manual"]' //////////// 13
     ];
 
     // Home
@@ -226,14 +241,15 @@ class payne
     // Values
     public static $valuesFiled = '#tradepending-vehicle-typeahead';
     public static $valuesFieldDrop = '#tradepending-input > span > span > div';
-    public static $valuesFieldId = '#fname-group';
-    public static $valuesModalFirstName = 'input id="first_name" class="form-control input-field text ui-widget-content ui-corner-all"';
+    public static $valuesModalForm = '#contact_form';
+    public static $valuesModalFirstName = 'input id="first_name"';
     public static $valuesModalLastName = '#last_name';
     public static $valuesModalEmail = '#email';
     public static $valuesModalPhone = '#phone';
     public static $valuesModalBtn = 'div:nth-child(3) > div > input';
     public static $valuesModalCoupe = 'div.select-container > div:nth-child(1) > a';
     public static $valuesModalGrab = 'div.container-fluid.main > h2';
+
 
 
 

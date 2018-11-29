@@ -81,6 +81,29 @@ class AcceptanceTester extends \Codeception\Actor
         $I->click(page::$Logo);
     }
 
+    public function CheckOption($I)
+    {
+        $I = $this;
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[0]);
+        
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[2]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[3]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[5]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[15]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[17]);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
