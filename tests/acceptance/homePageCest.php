@@ -245,9 +245,9 @@ class homePageCest
         $I->seeElement(page::$filterTypeOpen);
         $I->seeOptionIsSelected(page::$TypeCheckRadio[1],'New');
         $I->seeElement(page::$MakeOpen);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[9]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[24]);
         $I->seeElement(page::$Model);
-        $I->seeCheckboxIsChecked(page::$ModelCheckOption);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[27]);
     }
 
     public function UsedCarsDealsUnder15000(AcceptanceTester $I)
@@ -369,8 +369,8 @@ class homePageCest
         $I->wait(4);
         $I->checkOption(page::$TransmissionAutomatic);
         $I->checkOption(page::$TransmissionManual);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[10]);
-        $I->seeCheckboxIsChecked(page::$MakeCheckbox[11]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[25]);
+        $I->seeCheckboxIsChecked(page::$MakeCheckbox[26]);
         $I->click(page::$ClearAll);
         $I->seeElement(page::$SearchFor);
         $I->seeElement(page::$filterTypeOpen);

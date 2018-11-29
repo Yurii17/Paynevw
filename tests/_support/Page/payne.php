@@ -49,7 +49,6 @@ class payne
     public static $Transmission = '#filters_form > div.filter-item.filter-item-transmission';
     public static $TransmissionAutomatic = '#filters_form > div.filter-item.filter-item-transmission.open > div > label:nth-child(1)';
     public static $TransmissionManual = '#filters_form > div.filter-item.filter-item-transmission.open > div > label:nth-child(2)';
-    public static $ModelCheckOption = 'input[type="checkbox"][name="model"][value="Atlas"]';
     public static $TypeCheckRadio = [
         'input[type="radio"][name="type"][value="Used"]',
         'input[type="radio"][name="type"][value="New"]',
@@ -106,9 +105,10 @@ class payne
         'input[type="checkbox"][name="make"][value="Scion"]', //////////////////// 21
         'input[type="checkbox"][name="make"][value="Suzuki"]', /////////////////// 22
         'input[type="checkbox"][name="make"][value="Toyota"]', /////////////////// 23
-        'input[type="checkbox"][name="make"][value="Volkswagen"]', /////////////// 24
-        'input[type="checkbox"][name="transmission"][value="Automatic"]', //////// 12
-        'input[type="checkbox"][name="transmission"][value="Manual"]' //////////// 13
+        'input[type="checkbox"][name="make"][value="Volkswagen"]', /////////////// 24 Для Мейків
+        'input[type="checkbox"][name="transmission"][value="Automatic"]', //////// 25
+        'input[type="checkbox"][name="transmission"][value="Manual"]', /////////// 26
+        'input[type="checkbox"][name="model"][value="Atlas"]' //////////////////// 27 Для Модел
     ];
 
     // Home
