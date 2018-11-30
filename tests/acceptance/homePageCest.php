@@ -365,6 +365,7 @@ class homePageCest
         $I->seeElement(page::$MakeOpen);
         $I->seeElement(page::$Model);
         $I->checkOption(page::$MakeVolkswagen);
+        $I->moveMouseOver(page::$Transmission);
         $I->click(page::$Transmission);
         $I->wait(4);
         $I->checkOption(page::$TransmissionAutomatic);
