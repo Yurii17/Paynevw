@@ -144,6 +144,13 @@ class payne
 
     // New Cars
     public static $NewCars = '#menu_item-60';
+    public static $NewVolkswagen = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(1) > ul > li:nth-child(2) > a';
+    public static $NewMitsubishi = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(1) > ul > li:nth-child(3) > a';
+    public static $UsedTrucksLink = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(2) > ul > li:nth-child(2) > a';
+    public static $UsedLuxury = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(2) > ul > li:nth-child(4) > a';
+    public static $ScheduleService = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(3) > ul > li:nth-child(1) > a';
+    public static $OurTeamLink = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(4) > ul > li:nth-child(1) > a';
+    public static $InsuranceQuote = '#footer > div.bg-primary.text-white.py-4 > div > div > div:nth-child(4) > ul > li:nth-child(2) > a';
     public static $NewCarsdropdownlist = 'div.drp.d-none.d-xl-block';
     public static $mainmenuitem = 'div.container.d-none.d-xl-block > div > div > ul';
     public static $VolkswagenAtlasLink = 'div.swiper-slide-img > a';

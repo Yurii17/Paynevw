@@ -397,10 +397,16 @@ class homePageCest
         $menu_links =[
                      ['url' => '/', 'el' => page::$Home],
                      ['url' => '/new-cars-mcallen-tx', 'el' => page::$NewCars],
+                     ['url' => '/new-volkswagen-mcallen-tx', 'el' => page::$NewVolkswagen],
+                     ['url' => '/new-mitsubishi-mcallen-tx', 'el' => page::$NewMitsubishi],
                      ['url' => '/used-cars-mcallen-tx', 'el' => page::$UsedCars],
+                     ['url' => '/used-cars-trucks-mcallen-tx', 'el' => page::$UsedTrucksLink],
+                     ['url' => '/used-cars-luxury-mcallen-tx', 'el' => page::$UsedLuxury],
                      ['url' => '/car-loans-in-mcallen-tx',  'el' => page::$Finance],
+                     ['url' => '/schedule-car-maintenance-or-auto-repair-mcallen-tx',  'el' => page::$ScheduleService],
                      ['url' => '/service-and-parts', 'el' => page::$ServiceParts],
-                     ['url' => '/about-payne-vw-in-mcallen-tx', 'el' => page::$AboutUs]
+                     ['url' => '/about-payne-vw-in-mcallen-tx', 'el' => page::$AboutUs],
+                     ['url' => '/team-payne-vw-in-mcallen-tx', 'el' => page::$OurTeamLink]
                      ];
         foreach ($menu_links as $link ){
             $I->setOfActions2($link);
