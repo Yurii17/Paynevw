@@ -27,6 +27,7 @@ class payne
         'li:nth-child(5)'];
     public static $Footer = 'body > footer > div > div';
 
+
     // Slider Mini
     public static $Slider = 'div.bg-romb.pt-5.pb-4';
     public static $SliderAll = [
@@ -35,6 +36,8 @@ class payne
         'body > div.bg-romb.pt-5.pb-4 > div > div > div:nth-child(3)',
         'body > div.bg-romb.pt-5.pb-4 > div > div > div:nth-child(4)',
         'body > div.bg-romb.pt-5.pb-4 > div > div > div:nth-child(5)'];
+
+
 
     // Slider Cars Big
     public static $element = 'body > section:nth-child(7) > div > div.swiper-products-container.swiper-container-horizontal';
@@ -110,6 +113,14 @@ class payne
         'input[type="checkbox"][name="transmission"][value="Manual"]', /////////// 26
         'input[type="checkbox"][name="model"][value="Atlas"]' //////////////////// 27 Для Модел
     ];
+
+
+    // Price DropDown
+    public static $priceDrop = 'div.col-xs-12.mb-3.mb-lg-0.col-lg-4.d-flex.justify-content-center.justify-content-lg-end.top-filter-navigation.filters-icons > div:nth-child(2) > span';
+    public static $priceCarsGrab = 'div.txt.text-left > table > tbody > tr > td.text-right.px-0';
+
+
+
 
     // Home
     public static $Home = '#main-menu > li:nth-child(1) > span > a';

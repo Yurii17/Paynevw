@@ -314,7 +314,7 @@ class homePageCest
         $I->seeElement(page::$MakeOpen);
         $I->seeElement(page::$Model);
         $I->seeOptionIsSelected(page::$TypeCheckRadio[0],'Used');
-        $I->CheckOption($I);
+        $I->SetMake($I);
     }
 
     public function AboutUsOurTeam(AcceptanceTester $I)
@@ -454,6 +454,26 @@ class homePageCest
         var_dump($value);
         */
     }
+
+    public function Price(AcceptanceTester $I)
+    {
+        $I->click(page::$NewCars);
+        $I->waitForElementVisible(page::$priceDrop);
+
+        $value = $I->grabValueFrom(page::$priceCarsGrab);
+        $I->click(page::$priceDrop);
+
+
+    }
+
+
+
+
+
+
+
+
+
 
 
 
