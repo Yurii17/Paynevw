@@ -117,7 +117,7 @@ class payne
 
     // Price DropDown
     public static $priceDrop = 'div.col-xs-12.mb-3.mb-lg-0.col-lg-4.d-flex.justify-content-center.justify-content-lg-end.top-filter-navigation.filters-icons > div:nth-child(2) > span';
-    public static $priceCarsGrab = '#content ';
+    public static $priceCarsGrab = '#content > div > div.d-flex.align-content-start.flex-wrap.w-100.filtered-content.grid-display > div:nth-child(1) > div > div.txt.text-left > table > tbody > tr > td.text-right.px-0';
     public static $priceDropHigh = '#order_by_selector > option:nth-child(3)';
 
 

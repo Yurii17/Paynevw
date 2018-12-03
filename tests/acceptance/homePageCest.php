@@ -453,23 +453,22 @@ class homePageCest
         var_dump($value);
         */
     }
-    /*
     /**
      * @param AcceptanceTester $I
      * @throws Exception
-
+    */
     public function Price(AcceptanceTester $I)
     {
         $I->click(page::$NewCars);
-        $I->wait(5);
-        $value = $I->grabValueFrom(page::$priceCarsGrab);
+        $I->wait( 5);
+        $value = $I->grabTextFrom(page::$priceCarsGrab);
         $I->click(page::$priceDrop);
         $I->click(page::$priceDropHigh);
-        $I->wait( 5);
-        $value1 = $I->grabValueFrom(page::$priceCarsGrab);
+        $I->wait(5);
+        $value1 = $I->grabTextFrom(page::$priceCarsGrab);
         $I->assertNotSame($value, $value1);
     }
-    */
+
 
 
 
