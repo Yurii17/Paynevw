@@ -431,7 +431,6 @@ class homePageCest
        $after = $I->grabTextFrom(page::$sliderGrabElement);
        $I->assertNotSame($before,$after);
     }
-
     /**
      * @param AcceptanceTester $I
      * @throws Exception
@@ -454,17 +453,23 @@ class homePageCest
         var_dump($value);
         */
     }
+    /*
+    /**
+     * @param AcceptanceTester $I
+     * @throws Exception
 
     public function Price(AcceptanceTester $I)
     {
         $I->click(page::$NewCars);
-        $I->waitForElementVisible(page::$priceDrop);
-
+        $I->wait(5);
         $value = $I->grabValueFrom(page::$priceCarsGrab);
         $I->click(page::$priceDrop);
-
-
+        $I->click(page::$priceDropHigh);
+        $I->wait( 5);
+        $value1 = $I->grabValueFrom(page::$priceCarsGrab);
+        $I->assertNotSame($value, $value1);
     }
+    */
 
 
 
