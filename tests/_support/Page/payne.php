@@ -14,7 +14,7 @@ class payne
      */
 
     // Logo Paynevw
-    public static $Logo = '#header > div > div > div.col-12.col-sm-6.col-xl-3.order-1.d-flex.align-items-center.mb-3.mb-xl-0 > a';
+    public static $Logo = 'div.col-6.col-sm-4.col-md-5.col-xl-3.order-2.order-sm-1.d-flex.align-items-center.justify-content-center.justify-content-sm-start.mb-3.mb-xl-0';
 
     //Header Footer
     public static $call = 'div.col-12.col-xl-2.py-3.px-4.bd-xl-x';
@@ -124,14 +124,14 @@ class payne
 
     // Home
     public static $Home = '#main-menu > li:nth-child(1) > span > a';
-    public static $search = '#header > div > div > div.col-12.col-xl-6.d-flex.order-3.order-xl-2.justify-content-center.align-items-center > div > form > div > div > input';
+    public static $search = '#search_field';
     public static $loader = 'div.page-loader';
     public static $searchResult = 'div.search-result.dropdown-menu.w-100.my-0.border-top-0.show';
     public static $carousell = 'body > section.full-width.d- > div > div.swiper-wrapper';
     public static $footerEmail = '#footer_email';
     public static $footerBtn = 'div.col-12.col-xl-6.py-3.py-xl-5.pl-xl-5 > div > div > button';
     public static $successful = '#custom-message-dialog > div > div > div.modal-header';
-    public static $searchbutton = '#header > div > div > div.col-12.col-xl-6.d-flex.order-3.order-xl-2.justify-content-center.align-items-center > div > form > div > div > div.input-group-append > button';
+    public static $searchbutton = 'div > form > div > div > div.input-group-append > button';
     public static $searchContent = '#content';
     public static $clickbmw = '#content > div > div.d-flex.align-content-start.flex-wrap.w-100.filtered-content.grid-display > div:nth-child(1) > div > div.txt.text-left > h6 > a';
     public static $clickbmwresult = 'body > div.bg-common > section.border-bottom.background-white > div > ol > li.breadcrumb-item.active';
