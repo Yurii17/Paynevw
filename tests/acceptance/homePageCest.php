@@ -117,7 +117,7 @@ class homePageCest
         $I->fillField('contact_info[single][city]','Silicon Valley');
         $I->fillField('contact_info[single][zip]','2111');
         $I->fillField('contact_info[single][monthly_payment]','2111');
-        $I->click(page::$ChatClose);
+//        $I->click(page::$ChatClose);
         $I->scrollTo(page::$Footer);
         $I->click(page::$buttonFormActive);
 

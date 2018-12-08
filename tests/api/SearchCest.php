@@ -20,7 +20,7 @@ class SearchCest
     }
 
     // tests
-    public function tryToTest(ApiTester $I)
+    public function First(ApiTester $I)
     {
         $I->sendGET($this->route, [
             "limit" => 21,
@@ -30,6 +30,36 @@ class SearchCest
         $I->seeResponseCodeIs(response::OK);
     }
 
+    public function Second(ApiTester $I)
+    {
+        $I->sendGET($this->route, [
+        "limit" => 21,
+        "offset" => 0,
+        "criteria[cond]" => "Golf GTI"
+        ]);
+        $I->seeResponseCodeIs(response::OK);
+    }
+
+    public function Third(ApiTester $I)
+    {
+        $I->sendGET($this->route, [
+            "limit" => 21,
+            "offset" => 0,
+            "criteria[cond]" => "new-mitsubishi-eclipse-cross-mission-tx",
+            "used-cars-all-mcallen-tx",
+            "used-cars-under-15000-mcallen-tx?criteria%5Bselling_price%5D%5Bmin%5D=1&criteria%5Bselling_price%5D%5Bmax%5D=15000",
+            "used-fuel-efficient-cars-mcallen-tx?criteria%5Bepa_city%5D%5Bmin%5D=30&criteria%5Bepa_city%5D%5Bmax%5D=100",
+            "used-cars-4x4-mcallen-tx?criteria%5Bdrivetrain%5D%5B%5D=Four%20Wheel%20Drive",
+            "used-cars-trucks-mcallen-tx",
+            "used-cars-luxury-mcallen-tx"
+
+        ]);
+        $I->seeResponseCodeIs(response::OK);
+    }
+
+
+
+    /*
     public function SendEmail(ApiTester $I)
     {
         $I->haveHttpHeader('Content-type' ,'application/x-www-form-urlencoded');
@@ -53,6 +83,12 @@ class SearchCest
         ]);
         $I->seeResponseCodeIs(response::CREATED);
     }
+    */
+
+
+
+
+
 }
 
 
