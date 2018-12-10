@@ -314,7 +314,7 @@ class homePageCest
         $I->seeElement(page::$MakeOpen);
         $I->seeElement(page::$Model);
         $I->seeOptionIsSelected(page::$TypeCheckRadio[0],'Used');
-        $I->SetMake($I);
+//        $I->SetMake($I);
     }
 
     public function AboutUsOurTeam(AcceptanceTester $I)
