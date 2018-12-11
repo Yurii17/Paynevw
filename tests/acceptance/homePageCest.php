@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Factory as fake;
 use Page\payne as page;
 use \Facebook\WebDriver\WebDriverElement;
 
@@ -47,6 +48,7 @@ class homePageCest
         $I->seeInField(page::$search, $value2);
         var_dump($this->value); //output into console
     }
+
     /**
      * @param AcceptanceTester $I
      * @throws  Exception
@@ -369,9 +371,11 @@ class homePageCest
         $I->click(page::$Transmission);
         $I->wait(4);
         $I->checkOption(page::$TransmissionAutomatic);
+        $I->wait(2);
         $I->checkOption(page::$TransmissionManual);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[25]);
         $I->seeCheckboxIsChecked(page::$MakeCheckbox[26]);
+        $I->seeElement(page::$ClearAll);
         $I->click(page::$ClearAll);
         $I->seeElement(page::$SearchFor);
         $I->seeElement(page::$filterTypeOpen);

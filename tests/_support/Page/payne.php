@@ -1,6 +1,9 @@
 <?php
 namespace Page;
 
+use Faker\Factory as fake;
+
+
 class payne
 {
     // include url of current page

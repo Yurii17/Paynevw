@@ -1,5 +1,5 @@
 <?php
-
+use Faker\Factory as fake;
 use Page\payne as page;
 
 /**
