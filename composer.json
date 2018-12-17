@@ -3,6 +3,7 @@
     },
     "require": {
         "codeception/robo-paracept": "dev-master",
-        "allure-framework/allure-codeception": ">=1.1.0"
+        "allure-framework/allure-codeception": ">=1.1.0",
+        "fzaninotto/faker": "^1.8"
     }
 }
