@@ -302,6 +302,7 @@ class homePageCest
         $I->seeElement(page::$BodyStyle);
         $I->seeCheckboxIsChecked(page::$BodyStyleCheckboxIsChecked);
     }
+
      /* /**
      * @before UsedCarsDealsUnder15000
      * @before UsedCarsOver30MPG
@@ -390,7 +391,7 @@ class homePageCest
     {
         $links = [page::$NewCars, page::$UsedCars];
         $dropdownLinks = [page::$DealsUnder15000, page::$Over30MPG, page::$Used4x4, page::$UsedTrucks, page::$UsedLuxuryVehicles];
-        $all_links = array_unique (array_merge($links, $dropdownLinks));
+        $all_links = array_merge($links, $dropdownLinks);
         foreach ($all_links as $link){
             $I->setOfActions($link, $dropdownLinks);
         }
