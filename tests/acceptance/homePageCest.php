@@ -468,19 +468,32 @@ class homePageCest
      * @param AcceptanceTester $I
      * @throws Exception
     */
-    public function Price(AcceptanceTester $I)
+    public function PriceLowToHigh(AcceptanceTester $I)
     {
         $I->click(page::$NewCars);
         $I->wait( 5);
-        $value = $I->grabTextFrom(page::$priceCarsGrab);
+        $priceLow = $I->grabTextFrom(page::$priceCarsGrab);
         $I->click(page::$priceDrop);
         $I->click(page::$priceDropHigh);
         $I->wait(5);
-        $value1 = $I->grabTextFrom(page::$priceCarsGrab);
-        $I->assertNotSame($value, $value1);
+        $priceHigh = $I->grabTextFrom(page::$priceCarsGrab);
+        $I->assertNotSame($priceLow, $priceHigh);
     }
 
-
+    public function PriceHighToLow(AcceptanceTester $I)
+    {
+        $I->click(page::$NewCars);
+        $I->wait(5);
+        $I->click(page::$priceDrop);
+        $I->click(page::$priceDropHigh);
+        $I->wait(5);
+        $priceHigh = $I->grabTextFrom(page::$priceCarsGrab);
+        $I->click(page::$priceDrop);
+        $I->click(page::$priceDropLow);
+        $I->wait(5);
+        $priceLow = $I->grabTextFrom(page::$priceCarsGrab);
+        $I->assertNotSame($priceHigh, $priceLow);
+    }
 
 
 
