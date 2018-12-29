@@ -433,7 +433,7 @@ class homePageCest
      */
     public function swipeSliderElement(AcceptanceTester $I)
     {
-        $I->scrollTo(page::$sliderElement);
+        $I->scrollTo(page::$sliderSlide);
        $before = $I->grabTextFrom(page::$sliderGrabElement);
         $I->slide(page::$sliderSlide, -15000,0);
         $I->waitForElementChange(page::$sliderGrabElement, function(WebDriverElement $el) {
