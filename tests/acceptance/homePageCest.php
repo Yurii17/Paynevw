@@ -86,8 +86,8 @@ class homePageCest
         $I->click(page::$footerBtn);
         $I->wait(2);
         $I->seeElement(page::$successful);
-        $I->waitForElementVisible(page::$SalesHours, 100);
-        $I->seeElement(page::$ServiceHours);
+        $I->wait(3);
+        $I->seeInField(page::$footerEmail, '');
     }
 
     public function LetUsNowSubmitForm(AcceptanceTester $I)
