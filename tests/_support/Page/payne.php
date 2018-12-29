@@ -44,7 +44,6 @@ class payne
 
     // Slider Cars Big
     public static $element = 'body > section:nth-child(7) > div > div.swiper-products-container.swiper-container-horizontal';
-    public static $sliderElement = 'body > section:nth-child(7) > div > div.swiper-products-container.swiper-container-horizontal';
     public static $sliderGrabElement = 'section div.swiper-slide.swiper-slide-next > div.img-box > h4';
     public static $sliderSlide = 'div.swiper-slide.text-center.item.d-flex.align-items-start.justify-content-between.flex-column.swiper-slide-active';
 
